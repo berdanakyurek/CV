@@ -1,0 +1,79 @@
+% !TeX spellcheck = en_US
+\documentclass[
+    10pt,
+    A4,
+    english,
+    draft = false,
+    twoside = false,
+]{article}
+
+\usepackage{curriculum-vitae}
+
+\begin{document}
+	%	Basic information
+	\setname{Berdan}{Akyürek}
+	\setaddress{Ankara / Turkey}
+	\setmobile{(+90) 544 798 58 41}
+	\setmail{berdanakyurek17@gmail.com}
+	\setlinkedin{https://www.linkedin.com/in/berdan-akyurek/}
+	\setgithub{https://github.com/berdanakyurek}
+	% \setblog{https://duck2345.com/}
+
+	%---------------------------------------------------------------------------------------
+	%	Title + Contact
+	%----------------------------------------------------------------------------------------
+	\cvtitle{Computer Engineer}
+	%---------------------------------------------------------------------------------------
+	%---------------------------------------------------------------------------------------
+	%	Current Position
+	%----------------------------------------------------------------------------------------
+%	\cvSection{Current Position}
+	%---------------------------------------------------------------------------------------
+	%	Education
+	%----------------------------------------------------------------------------------------
+	\cvSection{EDUCATION}
+	\CVBlockWithTime{BILKENT UNIVERSITY}{September 2016 - February 2023}
+	{Computer Engineering, BSc}{Ankara, Turkey}
+    {
+      \CVBlockSubWithMidTitle{Pigeon's Map}{Senior Project}
+      {A mobile route planning application developed in Java for postal workers.}
+    }
+	\CVBlockWithTime{GÖLBAŞI ANATOLIAN HIGH SCHOOL}{September 2014 - June 2016}
+	{High School}{Ankara, Turkey}{}
+	%---------------------------------------------------------------------------------------
+	%	Experience
+	%----------------------------------------------------------------------------------------
+	\cvSection{EXPERIENCE}
+	\CVBlockWithTime{TEUS TECHNOLOGY}{May 2024 - Continuing}{Full Stack Developer}{Ankara, Turkey}
+    {
+      \CVBlockSub{TURKISH MINISTRY OF HEALTH CENTRAL PATIENT INDEX SYSTEM}
+      {A central platform developed with React and .Net Core that will integrate all Ministry of Health applications and store patient data.}
+      \CVBlockSub{FINAPEX}
+      {An accounting software developed with React and .Net Core that processes financial documents such as receipts and invoices by reading them with OCR and parsing their relevant fields.}
+    }
+    \CVBlockWithTime{VENTURA SOFTWARE}{September 2022 - December 2023}{Full Stack Developer}{Ankara, Turkey}
+    {
+      \CVBlockSub{TURKISH MINISTRY OF HEALTH LABORATORY INFORMATION MANAGEMENT SYSTEM (LIMS)}
+      {The development of the LBYS project, which is used nationwide, using React and .Net Core.}
+      \CVBlockSub{ORIGO-HIS}
+      {The Hospital Information Management System (HIMS) project developed using React and .Net Core.}
+    }
+    \CVBlockWithTime{BK MOBİLE}{August 2022 - September 2022}{Intern}{Ankara, Turkey}
+    {
+      \CVBlockSub{METODBOX}
+      {An AI-powered remote education platform used in schools such as Uğur Schools and Bahçeşehir College.}
+    }
+    \CVBlockWithTime{NETCAD}{August 2020 - September 2020}{Intern}{Ankara, Turkey}
+    {}
+	%---------------------------------------------------------------------------------------
+	%	Skills
+	%----------------------------------------------------------------------------------------
+	\cvSection{SKILLS}
+	\tab \begin{tabular}{r p{0.7\textwidth}}
+      \texttt{\large PROGRAMMING LANGUAGES} & \textbf{Experienced:} C\# \cvContactSep JavaScript \cvContactSep TypeScript \hfill \textbf{Familiar:} Python \cvContactSep C++ \cvContactSep C \cvContactSep Java \cvContactSep ELisp \\
+      \texttt{\large FRAMEWORK \& TOOLS} & .NET Core 8 \cvContactSep Entity Framework \cvContactSep React \cvContactSep Git \cvContactSep Linux \cvContactSep Emacs \\
+      \texttt{\large LANGUAGES} & \textbf{Native:} Turkish \hfill \textbf{Advanced:} English (Bilkent COPE 90.25/150.00) \\
+	\end{tabular}\\~\\
+	% ---------------------------------------------------------------------------------------
+
+\end{document}
