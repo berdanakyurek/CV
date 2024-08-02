@@ -1,1 +1,1 @@
-This repo contains my CV
+This repo contains my CV implemented with Latex using [[https://www.overleaf.com/latex/templates/curriculum-vitae-latex/jqztwqchhypk][this template]].
