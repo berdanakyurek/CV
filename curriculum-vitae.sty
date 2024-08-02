@@ -89,10 +89,24 @@
 	\ifthenelse{\isempty{#5}}{\\}{\tab \begin{minipage}{17cm}#5\end{minipage}\\~\\}
 }
 
+\newcommand{\CVBlockWithTimeHavingSub}[6]{
+  \tab \texttt{\Large \textbf{#1}} \hfill \textbf{\large #2}\\
+  \tab \textbf{#3} \hfill #4\\
+  \ifthenelse{\isempty{#5}}{}{\tab \begin{minipage}{17cm}#5\end{minipage}}\\[0.25em]
+  \ifthenelse{\isempty{#6}}{\\}{\tab \begin{minipage}{17cm}#6\end{minipage}\\~\\}
+}
+
+
   %	 CV Block with date/time
 \newcommand{\CVBlockSub}[2]{
 	\tab \texttt{\Large \textbf{#1}}\\[0.25em]
 	\ifthenelse{\isempty{#2}}{\\}{\tab \begin{minipage}{16cm}#2\end{minipage}\\~\\}
+}
+
+\newcommand{\CVBlockSubWithMidTitle}[3]{
+  \tab \texttt{\Large \textbf{#1}}\\[0.25em]
+  \tab \textbf{#2}\\
+  \ifthenelse{\isempty{#2}}{\\}{\tab \begin{minipage}{16cm}#3\end{minipage}\\~\\}
 }
 %	 CV Text block
 \newcommand{\CVTextBlock}[1]{\tab {\large \begin{minipage}{18cm}#1\end{minipage}}\\~\\}
