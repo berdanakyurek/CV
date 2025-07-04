@@ -1,0 +1,203 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemShort}[1]{%
+  \item\small{#1\vspace{-2pt}}%
+}
+
+
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingShort}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Berdan Akyürek} &  \href{mailto:berdanakyurek17@gmail.com}{berdanakyurek17@gmail.com}\\
+  Ankara/Turkey & \href{tel:+905447985841}{(+90) 544 798 58 41}\\
+  \href{https://github.com/berdanakyurek}{https://github.com/berdanakyurek} & \href{https://www.linkedin.com/in/berdan-akyurek/}{LinkedIn/berdan-akyurek} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Summary}
+\justifying
+Bilkent CS graduate and full-stack engineer with healthcare domain experience, building scalable modern .NET \& React solutions with hands-on experience in microservices and software architecture.
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingShort
+    {BSc in Computer Science, Bilkent University ( September 2016 -- February 2023)}{}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {Republic of Turkey Ministry of Health}{Ankara, Turkey}
+  {Full Stack Developer (via TEUS Technology)}{July 2024 - Present}
+  \resumeItemListStart
+  \resumeItem{Central Patient Index System}{Took part in the development of the interface and various services of the Master Patient Index implementation, designed for the centralized management of patient data (.NET Core 8, React).}
+  \resumeItem{Central Login Point}{Involved in the maintenance of the central login application for Ministry of Health projects (.NET Core 3, React).}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {TEUS Technology}{Ankara, Turkey}
+  {Full Stack Developer}{May 2024 - Present}
+  \resumeItemListStart
+  \resumeItem{MyRoboTax}{Designed and implemented a financial advisor automation application integrated with DATEV, the financial consulting system widely used in Germany from scratch (.NET Core 9, React).}
+  \resumeItem{Notification Gateway}{Contributed to the development of the front-end and back-end of the SMS module within a web application that enables the management of automated SMS and email processes for different systems (.NET Core 8, React).}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {Ventura Software}{Ankara, Turkey}
+  {Full Stack Developer}{September 2022 - December 2023}
+  \resumeItemListStart
+  \resumeItem{Ministry of Health Laboratory Information Management System (LIMS)}{Actively contributed in the redevelopment of the LIMS project using modern technologies, which has been used for years in all government laboratories (.NET Core 8, React).}
+  \resumeItem{ORIGO-HIS}{Designed various interfaces and developed endpoints for the HIS project intended for use in hospitals abroad (.NET Core 8, React).}
+  \resumeItemListEnd
+
+  \resumeSubheading   
+  {BK Mobile}{Ankara, Turkey}
+  {Intern}{August 2022 - September 2022}
+  \resumeItemListStart
+  \resumeItem{Metodbox}{Developed the front-end of the student clubs module for an online education platform (Javascript).}
+  \resumeItemListEnd
+
+  \resumeSubheading   
+  {Netcad}{Ankara, Turkey}
+  {Intern}{August 2020 - September 2020}
+  \resumeItemListStart
+  \resumeItem{Drawing Software PoC}{Designed and implemented an MS Paint-like drawing app with support for nondestructive editing through multiple layers, allowing independent drawing and visibility toggling (C\#).}
+  \resumeItemListEnd
+  
+  \resumeSubHeadingListEnd
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Skills}
+\resumeSubHeadingListStart
+  \resumeSubheadingShort {Programming Languages}{}
+  \resumeItemListStart
+    \resumeItem{Experienced}{C\#, Javascript, Typescript}
+    \resumeItem{Familiar}{Python, C++, Java, Elisp}
+  \resumeItemListEnd
+  \resumeSubheadingShort {Frameworks \& Tools}{}
+  \resumeItemListStart
+    \resumeItemShort {.NET Core 8, Entity Framework, PostgreSQL, React, Microservices, Docker, Redis, Kafka, Git, Linux, Emacs}
+  \resumeItemListEnd
+  \resumeSubheadingShort {Languages}{}
+  \resumeItemListStart
+    \resumeItem{Native}{Turkish}
+    \resumeItem{Advanced}{English (YDS: 82.5/100)}
+  \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+% --------ACHIEVEMENTS------------
+\section{Achievements}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {ALES – Academic Personnel and Graduate Education Exam}{}
+  {Ranked 395th among 139,565 participants (top $\sim$0.3\% or 99.7th percentile).}{December 2024}
+\resumeSubHeadingListEnd
+
+
+\end{document}
